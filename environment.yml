@@ -4,20 +4,20 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.8
-  - pandas
-  - biopython
-  - pyyaml
-  - tqdm
-  - termcolor
-  - ncbi-genome-download
-  - quast
-  - prokka
-  - maker
-  - repeatmasker
-  - repeatmodeler
-  - snap
-  - perl
-  - wget
-  - conda-forge::openmp
-  - blast
+  - python=3.9                # Updated to 3.9 for removesuffix compatibility
+  - pandas=2.2.2             # Latest stable as of mid-2025
+  - biopython=1.83           # Latest stable, compatible with Python 3.9
+  - pyyaml=6.0.1             # Latest stable
+  - tqdm=4.66.4             # Latest stable
+  - termcolor=2.4.0          # Latest stable
+  - ncbi-genome-download=0.3.1  # Latest from bioconda, stable for NCBI downloads
+  - quast=5.2.0              # Latest stable, widely used for genome assembly evaluation
+  - prokka=1.14.6            # Latest stable, compatible with recent bioinformatics workflows
+  - maker=3.01.04            # Latest stable release for eukaryotic annotation
+  - repeatmasker=4.1.5       # Latest stable, works with RepeatModeler
+  - repeatmodeler=2.0.4      # Latest stable, compatible with RepeatMasker
+  - snap=2023-09-12          # Latest snapshot, as versioning is date-based
+  - perl=5.38.0              # Latest stable Perl from conda-forge
+  - wget=1.24                # Latest stable wget
+  - conda-forge::openmp=17.0.6  # Latest compatible OpenMP runtime
+  - blast=2.15.0             # Latest stable NCBI BLAST
